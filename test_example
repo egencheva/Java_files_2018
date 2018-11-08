@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class pr1_exam {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double l = Double.parseDouble(scanner.nextLine());
+        double w = Double.parseDouble(scanner.nextLine());
+        double strana_bar = Double.parseDouble(scanner.nextLine());
+
+        double zala = l*w;
+        double golemina_bar = strana_bar*strana_bar;
+        double golemina_dansing = zala*0.19;
+
+        double svobodno_mqsto = zala - golemina_bar - golemina_dansing;
+        double br_gosti = Math.ceil(svobodno_mqsto/3.2);
+
+        System.out.printf("%.0f", br_gosti);
+
+    }
+}
