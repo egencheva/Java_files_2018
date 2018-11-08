@@ -16,6 +16,6 @@ public class pr1_exam {
         double br_gosti = Math.ceil(svobodno_mqsto/3.2);
 
         System.out.printf("%.0f", br_gosti);
-
+//test kljlkj
     }
 }
